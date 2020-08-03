@@ -3,9 +3,7 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Rout
 import { Observable } from 'rxjs';
 import { SecurityService } from './security.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class AuthGuard implements CanActivate {
  
   constructor(private securityService: SecurityService,
@@ -19,7 +17,8 @@ export class AuthGuard implements CanActivate {
         const claimType: string = next.data['claimType'];
   
       if ( this.securityService.securityObject.isAuthenticated
-        && this.securityService.securityObject[claimType]) {
+        // && this.securityService.securityObject[claimType]
+        ) {
         return true;
       } else {
         this.router.navigate(['login'],

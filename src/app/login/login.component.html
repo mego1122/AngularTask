@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
     <div class="col-xs-12">
       <div class="alert alert-danger" 
       *ngIf="securityObject &&
@@ -8,7 +8,7 @@
     </div>
   </div>
   
-  <!-- TEMPORARY CODE TO VIEW SECURITY OBJECT -->
+   TEMPORARY CODE TO VIEW SECURITY OBJECT -->
   <div class="row">
     <div class="col-xs-12">
       <label>{{securityObject | json}}</label>
@@ -24,11 +24,11 @@
           </div>
           <div class="panel-body">
             <div class="form-group">
-              <label for="userName">User Name</label>
+              <label for="userName">Email</label>
               <div class="input-group">
                 <input id="userName" name="userName" 
                        class="form-control" required
-                       [(ngModel)]="user.userName"
+                       [(ngModel)]="user.Email"
                        autofocus="autofocus" />
                 <span class="input-group-addon">
                   <i class="glyphicon glyphicon-envelope"></i>
@@ -38,9 +38,9 @@
             <div class="form-group">
               <label for="password">Password</label>
               <div class="input-group">
-                <input id="password" name="password" 
+                <input id="password" name="Password" 
                        class="form-control" required 
-                       [(ngModel)]="user.password"
+                       [(ngModel)]="user.Password"
                        type="password" />
                 <span class="input-group-addon">
                   <i class="glyphicon glyphicon-lock"></i>
@@ -56,4 +56,4 @@
         </div>
       </div>
     </div>
-  </form>
+  </form> 
