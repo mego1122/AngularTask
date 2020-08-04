@@ -1,6 +1,15 @@
 email:dev97.mego99@gmail.com
 password :ZXzx@1122
 
+first click login ,login screen will appear 
+after login , user and page1 and page 2 will appear 
+page 1 and page 2 if u click it ,will route to it
+and user will route to user list with edit and create
+if you click at edit  (do not forget to write the same password for password and confirm )
+there is also home tab containg image slider 
+and also at navbar there is dropdown list with 3 colors changing the background color
+
+
 
 
 # TaskJWT
